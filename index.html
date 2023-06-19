@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Green Office Solutions</title>
+    <link rel="stylesheet" href="style.css"/>
+
+    <style> /* hidden div for move in / move out and post construction unit */
+        #showOne {
+           display: none;
+        }
+        #showTwo {
+            display: none;
+        }
+        #showThree {
+           display: none;
+        }
+        #showFour {
+            display: none;
+        }
+     </style>
+
+
+ 
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="Heading" class="col-12 col-lg-6 text-center">
+                <h1>
+                    <span class="font-size-68 m-font-size-48" style="display: unset; font-weight: 700; color: rgb(16, 111, 11);">Green Office Solutions</span>
+                    <span class="font-size-68 m-font-size-48" style="display: unset; font-weight: 700; color: black;">  /</span>
+                    <span class="font-size-68 m-font-size-48" style="display: unset; font-weight: 700; color: rgb(11, 29, 111);">  Landsby</span><br>
+                </h1>
+            </div>
+        </div>
+
+
+            <div id="Body" class="col-12 col-lg-6">
+                <form action="https://formsubmit.co/nictorres248@gmail.com" method="POST"></div>
+
+             <div class="row">           
+                <div class="column">
+
+                    <label for="start"><b>Service Needed Date:</b></label>
+
+                    <input type="date" id="start" name="trip-start"
+                           value="2020-01-25"
+                           min="2023-06-16" max="2023-12-31"><br><br>
+
+                    <label for="Request"><b>Request type:</b></label>
+
+                <select name="Request" id="Request">
+                    <option value="0">Common Space Cleaning</option>
+                    <option value="One">Move In / Move Out Clean</option>
+                    <option value="Two">Post Construction Common Space</option>
+                    <option value="Three">Post Construction Unit</option>
+                    <option value="Four">Trash / Porter Service</option>
+                </select><br>
+
+                <div id="showOne" class="myDiv"> 
+
+                    <br><label for="desc"><b>Apartment #:</b></label>
+                    <input type="text" id="desc" name="desc"><br>
+
+                    <br><label for="Request1"><b>Unit Type:</b></label>
+                    <select name="Request1" id="Request1">
+                        <option value="Studio">Studio</option>
+                        <option value="1br1b">1 Bedroom, 1 Bath</option>
+                        <option value="2br2b">2 Bedroom, 2 Bath</option>
+                        <option value="3br2b">3 Bedroom, 2 Bath</option>
+                        <option value="3br3b">3 Bedroom, 3 Bath</option>
+                    </select>
+
+                </div>
+
+                <div id="showTwo" class="myDiv"> 
+
+                    <br><label for="desc"><b># of people:</b></label>
+                    <input type="text" id="desc" name="desc"><br>
+
+
+                </div>
+
+                <div id="showThree" class="myDiv"> 
+
+                    <br><label for="desc"><b>Apartment #:</b></label>
+                    <input type="text" id="desc" name="desc"><br>
+
+                    <br><label for="Request3"><b>Unit Type:</b></label>
+                    <select name="Request3" id="Request3">
+                        <option value="Studio">Studio</option>
+                        <option value="1br1b">1 Bedroom, 1 Bath</option>
+                        <option value="2br2b">2 Bedroom, 2 Bath</option>
+                        <option value="3br2b">3 Bedroom, 2 Bath</option>
+                        <option value="3br3b">3 Bedroom, 3 Bath</option>
+                    </select>
+
+                </div>
+
+                <div id="showFour" class="myDiv"> 
+
+                    <br><label for="desc"><b># of people:</b></label>
+                    <input type="text" id="desc" name="desc"><br>
+
+
+                </div>
+
+                <br><label for="desc"><b>Message:</b></label>
+                <input type="text" style="width: 250px; height: 100px;" id="desc" name="desc"><br><br>
+                <input type="submit" value="Submit">
+                
+            </form> 
+
+
+                </div>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>      
+
+                <script>
+                    $(document).ready(function(){
+                        $('#Request').on('change', function(){
+    	                    var demovalue = $(this).val(); 
+                        $("div.myDiv").hide();
+                        $("#show"+demovalue).show();
+                    });
+                });
+                </script> 
+
+                
+                <div class="column">
+                    
+                    <img src="https://images1.apartments.com/i2/AKcTEYVoMhZQePZ3-WgfMAlbwjI9yyaRa6hlazst9Ys/111/landsby-mountain-view-ca-building-photo.jpg" height="200px" width="400px">
+
+                </div>
+                </div>
+            </div>
+
+
+                <div class="footer">
+                        <p class="m-size-38 text-align-center size-48">
+                            <span class="font-size-48 m-font-size-38" style="display: unset; font-weight: 700; color: rgb(16, 111, 11);"><u>Contact Us</u></span>
+                        </p>
+                        <p class="text-align-center size-30 m-size-24">
+                            <span class="font-size-30 m-font-size-24" style="display: unset; font-weight: 700; color: rgb(16, 111, 11);">Call us directly at 813-992-5304</span>
+                        </p>
+                </div> 
+
+        </div>
+    </div>
+</body>
+</html>
