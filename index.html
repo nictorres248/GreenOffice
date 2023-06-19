@@ -4,6 +4,9 @@
     <title>Green Office Solutions</title>
     <link rel="stylesheet" href="style.css"/>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
+    9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
     <style> /* hidden div for move in / move out and post construction unit */
         #showOne {
            display: none;
@@ -37,7 +40,7 @@
         </div>
 
 
-            <div id="Body" class="col-12 col-lg-6">
+            <div id="Body" class="col-md-6">
                 <form action="https://formsubmit.co/58d5dff3612eb54a6716a81e248e86d7" method="POST"></div>
                     <!--Honeypot-->
                     <input type="text" name="_honey" style="display: none;">
@@ -49,7 +52,7 @@
                     <input type="hidden" name="_next" value="https://nictorres248.github.io/GreenOffice/success.html">
 
              <div class="row">           
-                <div class="column">
+                <div class="col-md-6">
 
                     <label for="start"><b>Service Needed Date:</b></label>
 
@@ -73,7 +76,7 @@
                     <input type="text" id="desc" name="Unit&nbsp;#"><br>
 
                     <br><label for="Request1"><b>Unit Type:</b></label>
-                    <select name="Unit Type" id="Request1">
+                    <select name="Unit&nbsp;Type" id="Request1">
                         <option value="Studio">Studio</option>
                         <option value="1 bedroom, 1 bath">1 Bedroom, 1 Bath</option>
                         <option value="2 bedroom, 2 bath">2 Bedroom, 2 Bath</option>
@@ -97,7 +100,7 @@
                     <input type="text" id="desc" name="Unit#"><br>
 
                     <br><label for="Request3"><b>Unit Type:</b></label>
-                    <select name="Unit Type" id="Request3">
+                    <select name="Unit&nbsp;Type" id="Request3">
                         <option value="Studio">Studio</option>
                         <option value="1 Bedroom 1 Bath">1 Bedroom, 1 Bath</option>
                         <option value="2 Bedroom 2 Bath">2 Bedroom, 2 Bath</option>
@@ -110,7 +113,7 @@
                 <div id="showFour" class="myDiv"> 
 
                     <br><label for="Request4"><b># of people:</b></label>
-                    <input type="text" id="desc" Name="# People"><br>
+                    <input type="text" id="desc" Name="#&nbsp;People"><br>
 
 
                 </div>
@@ -120,6 +123,12 @@
                 <input type="submit" value="Submit">
                 
             </form> 
+
+            <!--Boot Strap with Popper-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-
+            geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+            <!--jQuery library-->
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>      
 
@@ -136,7 +145,7 @@ $("#show"+demovalue).show();
                 </div>
 
                 
-                <div class="column">
+                <div class="col-md-6">
                     
                     <img src="https://images1.apartments.com/i2/AKcTEYVoMhZQePZ3-WgfMAlbwjI9yyaRa6hlazst9Ys/111/landsby-mountain-view-ca-building-photo.jpg" height="200px" width="400px">
 
