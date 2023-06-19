@@ -50,20 +50,20 @@
                     <label for="Request"><b>Request type:</b></label>
 
                 <select name="Request" id="Request">
-                    <option value="0">Common Space Cleaning</option>
-                    <option value="One">Move In / Move Out Clean</option>
-                    <option value="Two">Post Construction Common Space</option>
-                    <option value="Three">Post Construction Unit</option>
-                    <option value="Four">Trash / Porter Service</option>
+                    <option value="Common Space Cleaning">Common Space Cleaning</option>
+                    <option value="Move In / Move Out Clean">Move In / Move Out Clean</option>
+                    <option value="Post Construction Common Space">Post Construction Common Space</option>
+                    <option value="Post Construction Unit">Post Construction Unit</option>
+                    <option value="Trash / Porter Service">Trash / Porter Service</option>
                 </select><br>
 
                 <div id="showOne" class="myDiv"> 
 
                     <br><label for="desc"><b>Apartment #:</b></label>
-                    <input type="text" id="desc" name="Unit #"><br>
+                    <input type="text" class="form-contorl" id="Unit#" required><br>
 
                     <br><label for="Request1"><b>Unit Type:</b></label>
-                    <select name="Unit Type" id="Request1">
+                    <select name="Unit Type" id="Request1" required>
                         <option value="Studio">Studio</option>
                         <option value="1 bedroom, 1 bath">1 Bedroom, 1 Bath</option>
                         <option value="2 bedroom, 2 bath">2 Bedroom, 2 Bath</option>
@@ -75,7 +75,7 @@
 
                 <div id="showTwo" class="myDiv"> 
 
-                    <br><label for="desc"><b># of people:</b></label>
+                    <br><label for="people info"><b># of people:</b></label>
                     <input type="text" id="desc" name="No. of people"><br>
 
 
@@ -83,16 +83,16 @@
 
                 <div id="showThree" class="myDiv"> 
 
-                    <br><label for="desc"><b>Apartment #:</b></label>
-                    <input type="text" id="desc" name="Unit #"><br>
+                    <br><label for="Unit number"><b>Apartment #:</b></label>
+                    <input type="text" class="form-control" id="Unit#"><br>
 
                     <br><label for="Request3"><b>Unit Type:</b></label>
                     <select name="Unit Type" id="Request3">
                         <option value="Studio">Studio</option>
-                        <option value="1br1b">1 Bedroom, 1 Bath</option>
-                        <option value="2br2b">2 Bedroom, 2 Bath</option>
-                        <option value="3br2b">3 Bedroom, 2 Bath</option>
-                        <option value="3br3b">3 Bedroom, 3 Bath</option>
+                        <option value="1 Bedroom, 1 Bath">1 Bedroom, 1 Bath</option>
+                        <option value="2 Bedroom, 2 Bath">2 Bedroom, 2 Bath</option>
+                        <option value="3 Bedroom, 2 Bath">3 Bedroom, 2 Bath</option>
+                        <option value="3 Bedroom, 3 Bath">3 Bedroom, 3 Bath</option>
                     </select>
 
                 </div>
@@ -100,7 +100,7 @@
                 <div id="showFour" class="myDiv"> 
 
                     <br><label for="# People"><b># of people:</b></label>
-                    <input type="text" id="desc" name="No. of people"><br>
+                    <input type="text" class="form-control" id="#people"><br>
 
 
                 </div>
