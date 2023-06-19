@@ -17,11 +17,13 @@
         #showFour {
             display: none;
         }
-     </style>
 
+
+     </style>
 
  
 </head>
+
 <body>
     <div class="container">
         <div class="row">
@@ -49,17 +51,17 @@
 
                     <label for="Request"><b>Request type:</b></label>
 
-                <select name="Request" id="Request">
-                    <option value="Common Space Cleaning">Common Space Cleaning</option>
-                    <option value="Move In / Move Out Clean">Move In / Move Out Clean</option>
-                    <option value="Post Construction Common Space">Post Construction Common Space</option>
-                    <option value="Post Construction Unit">Post Construction Unit</option>
-                    <option value="Trash / Porter Service">Trash / Porter Service</option>
+                <select id="myselection">
+                    <option value="0">Common Space Cleaning</option>
+                    <option value="One">Move In / Move Out Clean</option>
+                    <option value="Two">Post Construction Common Space</option>
+                    <option value="Three">Post Construction Unit</option>
+                    <option value="Four">Trash / Porter Service</option>
                 </select><br>
 
                 <div id="showOne" class="myDiv"> 
 
-                    <br><label for="desc"><b>Apartment #:</b></label>
+                    <br><label for="Request1"><b>Apartment #:</b></label>
                     <input type="text" id="desc" name="Unit#"><br>
 
                     <br><label for="Request1"><b>Unit Type:</b></label>
@@ -75,7 +77,7 @@
 
                 <div id="showTwo" class="myDiv"> 
 
-                    <br><label for="people info"><b># of people:</b></label>
+                    <br><label for="Request2"><b># of people:</b></label>
                     <input type="text" id="desc" name="No. of people"><br>
 
 
@@ -83,24 +85,24 @@
 
                 <div id="showThree" class="myDiv"> 
 
-                    <br><label for="Unit number"><b>Apartment #:</b></label>
-                    <input type="text" id="Unit#" name="Unit#"><br>
+                    <br><label for="Request3"><b>Apartment #:</b></label>
+                    <input type="text" id="desc" name="Unit#"><br>
 
                     <br><label for="Request3"><b>Unit Type:</b></label>
                     <select name="Unit Type" id="Request3">
                         <option value="Studio">Studio</option>
-                        <option value="1 Bedroom, 1 Bath">1 Bedroom, 1 Bath</option>
-                        <option value="2 Bedroom, 2 Bath">2 Bedroom, 2 Bath</option>
-                        <option value="3 Bedroom, 2 Bath">3 Bedroom, 2 Bath</option>
-                        <option value="3 Bedroom, 3 Bath">3 Bedroom, 3 Bath</option>
+                        <option value="1 Bedroom 1 Bath">1 Bedroom, 1 Bath</option>
+                        <option value="2 Bedroom 2 Bath">2 Bedroom, 2 Bath</option>
+                        <option value="3 Bedroom 2 Bath">3 Bedroom, 2 Bath</option>
+                        <option value="3 Bedroom 3 Bath">3 Bedroom, 3 Bath</option>
                     </select>
 
                 </div>
 
                 <div id="showFour" class="myDiv"> 
 
-                    <br><label for="# People"><b># of people:</b></label>
-                    <input type="text" id="# People" Name="# People"><br>
+                    <br><label for="Request4"><b># of people:</b></label>
+                    <input type="text" id="desc" Name="# People"><br>
 
 
                 </div>
@@ -111,20 +113,19 @@
                 
             </form> 
 
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>      
+
+<script>
+$(document).ready(function(){
+$('#myselection').on('change', function(){
+var demovalue = $(this).val(); 
+$("div.myDiv").hide();
+$("#show"+demovalue).show();
+});
+});
+</script>
 
                 </div>
-
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>      
-
-                <script>
-                    $(document).ready(function(){
-                        $('#Request').on('change', function(){
-    	                    var demovalue = $(this).val(); 
-                        $("div.myDiv").hide();
-                        $("#show"+demovalue).show();
-                    });
-                });
-                </script> 
 
                 
                 <div class="column">
