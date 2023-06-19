@@ -39,13 +39,21 @@
 
             <div id="Body" class="col-12 col-lg-6">
                 <form action="https://formsubmit.co/58d5dff3612eb54a6716a81e248e86d7" method="POST"></div>
+                    <!--Honeypot-->
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!--Disable Captcha-->
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <!--Success Page-->
+                    <input type="hidden" name="_next" value="https://nictorres248.github.io/GreenOffice/success.html">
 
              <div class="row">           
                 <div class="column">
 
                     <label for="start"><b>Service Needed Date:</b></label>
 
-                    <input type="date" id="start" name="Needed Date"
+                    <input type="date" id="start" name="Needed&nbsp;Date"
                            value="2020-01-25"
                            min="2023-06-16" max="2023-12-31"><br><br>
 
@@ -62,7 +70,7 @@
                 <div id="showOne" class="myDiv"> 
 
                     <br><label for="Request1"><b>Apartment #:</b></label>
-                    <input type="text" id="desc" name="Unit#"><br>
+                    <input type="text" id="desc" name="Unit&nbsp;#"><br>
 
                     <br><label for="Request1"><b>Unit Type:</b></label>
                     <select name="Unit Type" id="Request1">
